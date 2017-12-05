@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root "welcome#index"
   resources :users
   resources :tickets
-  post "users/:id/giveTicket" => "tickets#give_ticket"
+  post "users/:id/give_ticket" => "tickets#give_ticket"
   get "users/:id/tickets" => "tickets#user_tickets"
   post "users/:id/use_ticket" => "tickets#consume_ticket"
 end

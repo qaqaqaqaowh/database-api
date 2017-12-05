@@ -2,33 +2,33 @@
   <li><h2>User</h2><ul>
     <li>
       <h3>Get all users</h3>
-      <p><i>GET</i> #link</p>
+      <p><i>GET</i> https://database-ios.herokuapp.com/users</p>
     </li>
     <li>
       <h3>Show user</h3>
-      <p><i>GET</i> #link</p>
+      <p><i>GET</i> https://database-ios.herokuapp.com/users/:id</p>
     </li>
     <li>
       <h3>Create user</h3>
-      <p><i>POST</i> #link</p>
+      <p><i>POST</i> https://database-ios.herokuapp.com/users/?email=:email&password=:password&name=:name</p>
     </li>
   </ul></li>
   <li><h2>Ticket</h2><ul>
     <li>
       <h3>Get all tickets</h3>
-      <p><i>GET</i> #link</p>
+      <p><i>GET</i> https://database-ios.herokuapp.com/tickets</p>
     </li>
     <li>
       <h3>Get tickets of a user</h3>
-      <p><i>GET</i> #link</p>
+      <p><i>GET</i> https://database-ios.herokuapp.com/users/:id/tickets</p>
     </li>
     <li>
       <h3>Give user a ticket</h3>
-      <p><i>GET</i> #link</p>
+      <p><i>POST</i> https://database-ios.herokuapp.com/users/:id/give_ticket</p>
     </li>
     <li>
       <h3>User consumes a ticket</h3>
-      <p><i>POST</i> #link</p>
+      <p><i>POST</i> https://database-ios.herokuapp.com/users/:id/use_ticket</p>
     </li>
   </ul></li>
 </ol>
