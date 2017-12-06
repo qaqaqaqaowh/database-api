@@ -3,7 +3,7 @@ class TicketsController < ApplicationController
   def give_ticket
     @ticket = Ticket.new(user_id: params[:id])
     @ticket.save
-    render status: 200
+    head 200
   end
 
   def index
@@ -21,9 +21,9 @@ class TicketsController < ApplicationController
     @user = User.find(params[:id])
     if @ticket = @user.tickets.first
       @ticket.destroy
-      render status: 200
+      head 200
     else
-      render status: 403
+      head 403
     end
   end
 

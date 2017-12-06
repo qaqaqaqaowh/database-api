@@ -8,9 +8,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new(email: params[:email], password: params[:password], name: params[:name])
     if @user.save
-      render status: 200
+      head 200
     else
-      render status: 403
+      head 403
     end
   end
 
