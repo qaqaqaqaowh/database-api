@@ -11,6 +11,7 @@ class UsersController < ApplicationController
       render status: 200
     else
       render status: 403
+    end
   end
 
   def show

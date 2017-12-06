@@ -24,6 +24,7 @@ class TicketsController < ApplicationController
       render status: 200
     else
       render status: 403
+    end
   end
 
 end
